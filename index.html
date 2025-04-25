@@ -17,6 +17,9 @@
             scroll-behavior: smooth;
 
         }
+        * {
+            box-sizing: border-box;
+        }
 
         /* Global Styles */
         body {
@@ -351,6 +354,14 @@
         footer .social-links a:hover {
             color: var(--theme-color);
         }
+        @media screen and (max-width: 992px) {
+        .product-grid, .team-grid {
+        flex-wrap: wrap;
+        }
+        .product-card, .team-member {
+        flex: 1 1 auto;
+        }
+        }
     </style>
 </head>
 
@@ -414,21 +425,21 @@
         <div class="team-grid">
             <!-- Business Owner -->
             <div class="team-member">
-                <img src="images/owner.jpg" alt="Business Owner">
+                <img src="owner.jpg" alt="Business Owner">
                 <h3>Sayyed G Abbas</h3>
                 <p>Business Owner</p>
                 <span>Founder & Visionary</span>
             </div>
             <!-- CEO -->
             <div class="team-member">
-                <img src="images/ceo.jpg" alt="CEO">
+                <img src="ceo.jpg" alt="CEO">
                 <h3>Gulam Haider</h3>
                 <p>General Manager</p>
                 <span>Leadership & Strategy</span>
             </div>
             <!-- Vice President -->
             <div class="team-member">
-                <img src="images/vice.jpg" alt="Vice President">
+                <img src="vice.jpg" alt="Vice President">
                 <h3>Akhtar Abbas</h3>
                 <p>Vice President</p>
                 <span>Operations & Growth</span>
